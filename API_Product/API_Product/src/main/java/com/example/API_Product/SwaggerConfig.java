@@ -16,6 +16,6 @@ public class SwaggerConfig {
                .info(new Info()
                        .title("Bình An")
                        .version("1.0")
-                       .description("API documentation for managing users"));
+                       .description("API documentation for managing products"));
    }
 }

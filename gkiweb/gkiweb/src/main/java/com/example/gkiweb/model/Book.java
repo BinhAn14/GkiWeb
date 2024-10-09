@@ -23,12 +23,10 @@ public class Book {
         this.namXB = namXB;
         this.price = price;
     }
-
-    // Default constructor
+    
     public Book() {
     }
 
-    // Getters and Setters
     public int getId() {
         return id;
     }

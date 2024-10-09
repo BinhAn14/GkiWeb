@@ -1,12 +1,9 @@
 package com.example.API_Product.service;
 
-
-
 import com.example.API_Product.model.Product;
 import com.example.API_Product.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
