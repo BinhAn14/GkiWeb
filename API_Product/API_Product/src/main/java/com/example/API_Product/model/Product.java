@@ -1,7 +1,5 @@
 package com.example.API_Product.model;
 
-
-
 import jakarta.persistence.*;
 
 @Entity

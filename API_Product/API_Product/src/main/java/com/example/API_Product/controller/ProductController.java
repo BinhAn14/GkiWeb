@@ -17,14 +17,14 @@ public class ProductController {
     public ProductController() {
     }
 
-    // API GET danh sách sản phẩm
+
     @GetMapping("/products")
     @ResponseBody
     public List<Product> getProductList() {
         return productService.findAll();
     }
 
-    // API GET sản phẩm theo ID
+ 
     @GetMapping("/products/{id}")
     @ResponseBody
     public ResponseEntity<Product> getProductById(@PathVariable("id") int productId) {
@@ -36,7 +36,7 @@ public class ProductController {
         return ResponseEntity.status(404).body(null);
     }
 
-    // API DELETE sản phẩm theo ID
+
     @DeleteMapping("/products/{id}")
     @ResponseBody
     public List<Product> removeProductById(@PathVariable("id") Long productId) {
@@ -44,7 +44,7 @@ public class ProductController {
         return productService.findAll();
     }
 
-    // API POST tạo sản phẩm mới
+    
     @PostMapping("/products")
     @ResponseBody
     public ResponseEntity<Product> createProduct(@RequestBody Product product) {
@@ -52,7 +52,7 @@ public class ProductController {
         return ResponseEntity.status(201).body(product);
     }
 
-    // API PUT cập nhật sản phẩm theo ID
+    
     @PutMapping("/products/{id}")
     @ResponseBody
     public ResponseEntity<Product> updateProduct(@PathVariable("id") Long productId, @RequestBody Product updateProduct) {
